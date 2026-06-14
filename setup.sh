@@ -10,7 +10,6 @@ export NVM_DIR="$HOME/.nvm"
 nvm install --lts
 nvm use --lts
 
-
 echo "================================"
 echo " Installing Neovim"
 echo "================================"
@@ -35,7 +34,6 @@ echo "================================"
 echo " Installing Iosevka font"
 echo "================================"
 curl -Lo ~/Downloads/iosevka.zip https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/Iosevka.zip
-
 
 if [ "$(uname)" = "Darwin" ]; then
   unzip ~/Downloads/iosevka.zip -d ~/Library/Fonts/
