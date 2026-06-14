@@ -28,7 +28,7 @@ else
 fi
 
 mkdir -p ~/.config/nvim
-git clone git@github.com:Guilherme-Matosoli/vimconfig.git ~/.config/nvim
+git clone https://github.com/Guilherme-Matosoli/vimconfig.git ~/.config/nvim
 
 echo "================================"
 echo " Installing Iosevka font"
