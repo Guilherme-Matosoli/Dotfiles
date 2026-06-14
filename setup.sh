@@ -17,7 +17,7 @@ if [ "$(uname)" = "Darwin" ]; then
   curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim-macos-arm64.tar.gz
   tar -xzf nvim-macos-arm64.tar.gz
   sudo mv nvim-macos-arm64 /opt/nvim
-  sudo ln -s /opt/nvim/bin/nvim /usr/local/bin/nvim
+  echo 'export PATH="$PATH:/opt/nvim/bin"' >> ~/.zshrc
   rm nvim-macos-arm64.tar.gz
 else
   curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim-linux-x86_64.tar.gz
