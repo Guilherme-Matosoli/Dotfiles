@@ -45,8 +45,7 @@ source ~/.zshrc
 
 - **Prefix** — `Ctrl+Space` (macOS) / `Alt+Space` (Linux)
 - **Pane navigation** — `prefix + h/j/k/l` (vim keys, wraps to next window at edge)
-- **New window** — `Super+c`
-- **Kill window** — `prefix + &`
+- **Kill window** — `prefix + q`
 - **Status bar** — top, gruvbox dark theme
 - Windows auto-renumber on close
 
