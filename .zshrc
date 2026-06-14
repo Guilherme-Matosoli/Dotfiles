@@ -7,6 +7,20 @@ source $ZSH/oh-my-zsh.sh
 
 # VI Mode
 bindkey -v
+# Cursor shape per vi mode
+function zle-keymap-select {
+  if [[ $KEYMAP == vicmd ]] || [[ $1 == 'block' ]]; then
+    echo -ne '\e[1 q'  # block = normal mode
+  elif [[ $KEYMAP == viins ]] || [[ $KEYMAP == 'main' ]] || [[ $1 == 'beam' ]]; then
+    echo -ne '\e[5 q'  # beam/pipe = insert mode
+  fi
+}
+zle -N zle-keymap-select
+
+# Block cursor on startup
+zle-line-init() { echo -ne '\e[1 q' }
+zle -N zle-line-init
+# END VI Mode
 
 # Aliases
 alias c="clear"
