@@ -7,6 +7,14 @@ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.5/install.sh | bash
 export NVM_DIR="$HOME/.nvm"
 \. "$NVM_DIR/nvm.sh"
 
+
+
+echo "================================"
+echo " Installing Homebrew"
+echo "================================"
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+brew install tmux
+
 nvm install --lts
 nvm use --lts
 
